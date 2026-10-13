@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard - DigiCraft</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #fef7ec;
+      color: #4d2c19;
+    }
+
+    header {
+      background-color: #dcb48c;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+
+    .dashboard-container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 30px 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      color: #8b5e3c;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #5a3d2b;
+    }
+
+    .nav-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #b07b4c;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #8c5c2e;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #a08979;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Admin Dashboard - DigiCraft</h1>
+  </header>
+
+  <main class="dashboard-container">
+
+    <div class="card">
+      <h2>View All Artisans</h2>
+      <p>Review artisan applications, approve or disapprove based on profile and craft quality.</p>
+      <a class="nav-button" href="viewArtisans.jsp">Go to Artisans</a>
+    </div>
+
+    <div class="card">
+      <h2>View All Buyers</h2>
+      <p>Access list of registered buyers and their contact information.</p>
+      <a class="nav-button" href="viewBuyers.jsp">Go to Buyers</a>
+    </div>
+
+    <div class="card">
+      <h2>View All Products</h2>
+      <p>Monitor all listed handmade products and manage product information.</p>
+      <a class="nav-button" href="viewAllProducts.jsp">Go to Products</a>
+    </div>
+
+    <div class="card">
+      <h2>Logout</h2>
+      <p>Securely log out from the admin dashboard.</p>
+      <a class="nav-button" href="index.html">Logout</a>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2025 DigiCraft. Promoting Indian Handcrafts with Pride.
+  </footer>
+
+</body>
+</html>

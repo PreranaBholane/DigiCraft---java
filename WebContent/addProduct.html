@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Add Product</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1585155777340-0b0aa2c61b23?auto=format&fit=crop&w=1600&q=80'); /* Full background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+        .overlay {
+            background-color: rgba(255, 250, 240, 0.92); /* Slight off-white overlay for contrast */
+            min-height: 100vh;
+            padding: 50px 0;
+        }
+
+        .form-container {
+            background-color: white;
+            width: 45%;
+            margin: auto;
+            padding: 25px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 12px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #8B0000; /* dark reddish-brown */
+            color: white;
+            padding: 12px;
+            font-size: 20px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 95%;
+            padding: 8px;
+            margin-top: 4px;
+            margin-bottom: 12px;
+            border: 1px solid #c8b79b;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #5e3c2c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #7a523e;
+        }
+    </style>
+</head>
+<body>
+
+<div class="overlay">
+    <div class="form-container">
+        <form action="addProduct" method="post">
+            <table>
+                <tr>
+                    <th colspan="2">Post Handmade Product</th>
+                </tr>
+                <tr>
+                    <td><label>Product Name:</label></td>
+                    <td><input type="text" name="productName"></td>
+                </tr>
+                <tr>
+                    <td><label>Description:</label></td>
+                    <td><input type="text" name="description"></td>
+                </tr>
+                <tr>
+                    <td><label>Price:</label></td>
+                    <td><input type="text" name="price"></td>
+                </tr>
+                <tr>
+                    <td><label>Stock:</label></td>
+                    <td><input type="text" name="stock"></td>
+                </tr>
+                <tr>
+                    <td><label>PostDate:</label></td>
+                    <td><input type="text" name="postDate"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="submit">Add Product</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

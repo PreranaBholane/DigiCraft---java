@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Artisan Dashboard - DigiCraft</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #fdf4e7;
+      color: #4d2c19;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #d8aa72;
+      color: white;
+      padding: 25px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.3rem;
+      letter-spacing: 1px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .dashboard {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      padding: 40px 30px;
+      text-align: center;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    .dashboard h2 {
+      margin-bottom: 30px;
+      font-size: 1.8rem;
+      color: #7a4c2e;
+    }
+
+    .dashboard a {
+      display: block;
+      margin: 15px 0;
+      text-decoration: none;
+      padding: 14px 20px;
+      background-color: #b97d4b;
+      color: white;
+      font-weight: 600;
+      border-radius: 10px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .dashboard a:hover {
+      background-color: #8d5c2a;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #9e7d60;
+      background-color: #f5e5d1;
+    }
+
+    @media (max-width: 600px) {
+      .dashboard {
+        padding: 30px 20px;
+      }
+
+      .dashboard h2 {
+        font-size: 1.5rem;
+      }
+
+      .dashboard a {
+        padding: 12px 16px;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DigiCraft Artisan Panel</h1>
+  </header>
+
+  <main>
+    <div class="dashboard">
+      <h2>Welcome, Artisan!</h2>
+      <a href="addProduct.html">Post Handmade Products</a>
+      <a href="viewArtisanOrders.jsp">View Orders</a>
+      <a href="changePassword.html">Change Password</a>
+      <a href="index.html">Logout</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 DigiCraft | Empowering Rural Indian Artisans with Technology
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Artisan Registration - DigiCraft</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #fdf2e4; /* Light golden */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #4b2e1a; /* Dark brown text */
+    }
+
+    .container {
+      background-color: #fffdf9;
+      border: 2px solid #d1a15f;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      padding: 28px 22px;
+      max-width: 340px;
+      width: 90%;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 22px;
+      color: #6e3b1e;
+      font-size: 1.6rem;
+    }
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 5px;
+      color: #5c3419;
+      font-size: 0.9rem;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      width: 100%;
+      padding: 9px 11px;
+      margin-bottom: 16px;
+      border: 2px solid #d8aa72;
+      border-radius: 8px;
+      background-color: #fffdf8;
+      color: #4d2a14;
+      font-size: 0.95rem;
+      transition: border 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #b97d4b;
+      box-shadow: 0 0 5px rgba(185, 125, 75, 0.3);
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 11px;
+      background-color: #b97d4b;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #8c5a2d;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 22px 18px;
+        max-width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Register as Artisan</h1>
+    <form method="post" action="artisanRegister">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="craftType">Craft Type:</label>
+      <input type="text" id="craftType" name="craftType" required>
+
+      <label for="contact">Contact:</label>
+      <input type="text" id="contact" name="contact" required>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <input type="submit" value="Register">
+    </form>
+  </div>
+
+</body>
+</html>
